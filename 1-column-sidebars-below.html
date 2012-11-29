@@ -1,0 +1,350 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>   <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>   <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>   <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither -->
+
+<head>
+<meta charset="utf-8">
+<title>Secondary Page Template | New Mexico State University</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/1-column-sidebars-below.css">
+
+<!-- Using development version of Modernizr. modernizr.com/docs/#installing -->
+<script src="scripts/modernizr.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+  $('#vertical-menu > li > a').click(function(){
+	   $(this).next().slideToggle();
+	   if ($(this).attr('class') != 'active'){
+		$(this).addClass('active');
+	   } else {
+		$(this).removeClass('active');
+	   }
+  });
+});
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+  <div class="mobile"><!-- For mobile - resets width to 100% for responsive scaling. -->
+    <header><img id="branding" src="img/nmsu-branding.png" width="640" height="54" alt="NMSU branding"> <a href="http://www.nmsu.edu/"><img id="logo" src="img/nmsu-logo.png" width="99" height="110" alt="NMSU logo" title="NMSU Home"></a>
+      <div id="masthead"><img src="img/masthead3.png" width="425" height="30" alt="New Mexico State University">
+        <div class="visually-hidden">New Mexico State University</div>
+        <h1><a href="#">Recreational Sports</a></h1>
+        <div id="tagline">Tagline</div>
+        <!-- #tagline --> 
+      </div>
+      <!-- #masthead -->
+      <form id="search" action="http://www.nmsu.edu/search_results.php" method="POST">
+        <fieldset>
+          <input type="hidden" name="domains" value="nmsu.edu" />
+          <input type="hidden" name="sitesearch" value="nmsu.edu" />
+          <input type="text" name="q" id="q" value="" placeholder="Search NMSU" />
+          <a onClick="document.getElementById('search').submit()"></a>
+        </fieldset>
+      </form>
+    </header>
+    <nav id="horizontal"> <a href="#content" class="visually-hidden">Skip to content.</a>
+      <ul id="horizontal-menu">
+        <li><a href="#">AggieFit</a>
+          <ul>
+            <li><a href="#">Sub-menu one</a></li>
+            <li><a href="#">Sub-menu two</a></li>
+            <li><a href="#">Sub-menu three with a really, really annoyingly long link phrase</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Aquatics</a></li>
+        <li><a href="#">Fitness</a></li>
+        <li><a href="#">Intramurals</a></li>
+        <li><a href="#">Outdoor</a></li>
+        <li><a href="#">Wellness</a></li>
+      </ul>
+      <!-- For wrapround effect on bottom of menu bar. -->
+      <div id="left-wraparound"></div>
+      <div id="right-wraparound"></div>
+    </nav>
+    <div id="main">
+      <div id="feature"> <img src="img/swim.jpg" width="960" height="480"> </div>
+      <!-- #feature -->
+      
+      <!--<div id="feature" class="feature-plus-text"><img src="img/Mainimage_Presweb_Initiatives_EconomicImpact.jpg" alt="View of Zuhl Library" width="400" height="263">
+        <div id="feature-text">
+          <h1>Presidential Initiatives (Heading 1)</h1>
+          <h2>Economic Impact Report (Heading 2)</h2>
+          <p>For more than 100 years, NMSU has been a major economic engine for the state. Even during challenging fiscal times, the university pours thousands of jobs and millions of dollars into New Mexico's economy. &quot;The Economic Impact of New Mexico State University in 2010&quot; provides ample evidence of NMSU's invaluable contributions. One finding of note: NMSU alumni who remain in the state account for hundres of millions of dollars in income and tax revenue.</p>
+        </div>
+      </div>--><!-- #feature -->
+      <div id="breadcrumbs">
+        <ul>
+          <li><a href="http://www.nmsu.edu/">NMSU</a></li>
+          <li><a href="#">Unit</a></li>
+          <li><a href="#">Section</a></li>
+          <li>Page</li>
+        </ul>
+      </div>
+      <!-- #breadcrumbs -->
+      <div id="container">
+        <div id="content">
+          <h1>Heading One</h1>
+          <h1>Heading One <span class="sub-heading">With a sub-heading</span></h1>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus enim felis, vestibulum a, dignissim eu, egestas posuere, ipsum. Fusce sed sapien. Aliquam vitae sem.</p>
+          <h2>Heading Two</h2>
+          <h3>Heading Three</h3>
+          <h4>Heading Four</h4>
+          <h5>Heading Five</h5>
+          <h6>Heading Six</h6>
+          <p>In lacinia pellentesque lacus. Suspendisse<sup>1</sup> dictum, metus non aliquam sollicitudin, nisi nunc congue tortor, <a href="#">example of a link phrase</a>. Quisque cursus fringilla ligula. Phasellus est ligula, pulvinar non, volutpat<sub>2</sub> non, feugiat eget, lacus. <strong>Quisque bibendum nibh quis orci laoreet luctus</strong>. <em>Pellentesque tristique lectus sit amet lorem. Fusce ultricies ante ullamcorper arcu</em>.</p>
+          <h2>Heading Two</h2>
+          <figure class="figure-left"><img src="img/pool.jpg" width="300" height="200" class="figure-bordered">
+            <figcaption>Example of a figure caption. Quisque bibendum nibh quis orci laoreet luctus.</figcaption>
+          </figure>
+          <p>Suspendisse dictum, metus non aliquam sollicitudin, nisi nunc congue tortor, et auctor leo est malesuada ante. Quisque cursus fringilla ligula. Phasellus est ligula, pulvinar non, volutpat non, feugiat eget, lacus. Quisque bibendum nibh quis orci laoreet luctus. Pellentesque tristique lectus sit amet lorem. Fusce ultricies ante ullamcorper arcu.</p>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <i>Phasellus enim felis, vestibulum a</i>, dignissim eu, egestas posuere, ipsum. Fusce sed sapien. Aliquam vitae sem. In lacinia pellentesque lacus. Suspendisse dictum, metus non aliquam sollicitudin, nisi nunc congue tortor, et auctor leo est malesuada ante. <b>Quisque cursus fringilla ligula</b>. Phasellus est ligula, pulvinar non, volutpat non, feugiat eget, lacus. Quisque bibendum nibh quis orci laoreet luctus. Pellentesque tristique lectus sit amet lorem. Fusce ultricies ante ullamcorper arcu.</p>
+          <h3>Heading Three</h3>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus enim felis, vestibulum a, dignissim eu, egestas posuere, ipsum.</p>
+          <p>Examples of message boxes:</p>
+          <p class="info">Informational message.</p>
+          <p class="success">Success message.</p>
+          <p class="warning">Warning message.</p>
+          <p class="error">Error message.</p>
+          <p class="validation">Validation message.</p>
+          <p>Suspendisse dictum, metus non aliquam sollicitudin, nisi nunc congue tortor, et auctor leo est malesuada ante. Quisque cursus fringilla ligula. Phasellus est ligula, pulvinar non, volutpat non, feugiat eget, lacus. Quisque bibendum nibh quis orci laoreet luctus. </p>
+          <blockquote>
+            <p>Example of a blockquote. Suspendisse dictum, metus non aliquam sollicitudin, nisi nunc congue tortor, et auctor leo est malesuada ante. Quisque cursus fringilla ligula. Phasellus est ligula, pulvinar non, volutpat non, feugiat eget, lacus. Quisque bibendum nibh quis orci laoreet luctus. </p>
+          </blockquote>
+          <h4>Heading Four</h4>
+          <p>Quisque cursus fringilla ligula. Phasellus est ligula, pulvinar non, volutpat non, feugiat eget, lacus. Quisque bibendum nibh quis orci laoreet luctus. Pellentesque tristique lectus sit amet lorem. Fusce ultricies ante ullamcorper arcu.</p>
+          <ul>
+            <li>Unordered list one</li>
+            <li>Unordered list two</li>
+            <li><a href="#">Unordered list three</a></li>
+            <li><a href="#">Unordered list four</a></li>
+            <li>Unordered list five</li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus enim felis, vestibulum a, dignissim eu, egestas posuere, ipsum. Fusce sed sapien. Aliquam vitae sem. In lacinia pellentesque lacus. Suspendisse dictum, metus non aliquam sollicitudin, nisi nunc congue tortor, et auctor leo est malesuada ante. Quisque cursus fringilla ligula. Phasellus est ligula, pulvinar non, volutpat non, feugiat eget, lacus. Quisque bibendum nibh quis orci laoreet luctus. Pellentesque tristique lectus sit amet lorem. Fusce ultricies ante ullamcorper arcu.</p>
+          <h5>Heading Five</h5>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus enim felis, vestibulum a, dignissim eu, egestas posuere, ipsum. Fusce sed sapien. Aliquam vitae sem. In lacinia pellentesque lacus. Suspendisse dictum, metus non aliquam sollicitudin, nisi nunc congue tortor, et auctor leo est malesuada ante. Quisque cursus fringilla ligula. Phasellus est ligula, pulvinar non, volutpat non, feugiat eget, lacus. Quisque bibendum nibh quis orci laoreet luctus. Pellentesque tristique lectus sit amet lorem. Fusce ultricies ante ullamcorper arcu.</p>
+          <p>Call-to-action buttons, regular and extra-large:</p>
+          <a href="#" class="call-to-action-button">Apply to NMSU</a><br>
+          <a href="#" class="call-to-action-button xl-button">Apply to NMSU</a>
+          <h6>Heading Six</h6>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus enim felis, vestibulum a, dignissim eu, egestas posuere, ipsum. Fusce sed sapien. Aliquam vitae sem. In lacinia pellentesque lacus. Suspendisse dictum, metus non aliquam sollicitudin, nisi nunc congue tortor, et auctor leo est malesuada ante. Quisque cursus fringilla ligula. Phasellus est ligula, pulvinar non, volutpat non, feugiat eget, lacus. Quisque bibendum nibh quis orci laoreet luctus. Pellentesque tristique lectus sit amet lorem. Fusce ultricies ante ullamcorper arcu.</p>
+          <table class="striped">
+            <caption>
+            Additional Fees
+            </caption>
+            <thead>
+              <tr>
+                <th>Fee type </th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <td colspan="2">* One-time fee.</td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>Undergraduate admission application fee </td>
+                <td>$15.00*</td>
+              </tr>
+              <tr>
+                <td>New student orientation fee </td>
+                <td>$40.00</td>
+              </tr>
+              <tr>
+                <td>International student admission application fee</td>
+                <td>$50.00</td>
+              </tr>
+              <tr>
+                <td>International students orientation fee </td>
+                <td>$50.00</td>
+              </tr>
+              <tr>
+                <td>Distance education course fee (per credit) </td>
+                <td>$25.00</td>
+              </tr>
+              <tr>
+                <td>ASNMSU Fee (Fall/ Spring 1-11 credit enrollment)</td>
+                <td>$33.50</td>
+              </tr>
+              <tr>
+                <td>ASNMSU Fee (Summer 1-8 credit enrollment) </td>
+                <td>$12.40</td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="stylized" class="myform">
+            <form id="form" name="form" method="post" action="theme/index.html">
+              <fieldset>
+                <legend>Sign Up</legend>
+                <label>Name</label>
+                <input type="text" name="name" id="name" />
+                <label>Email</label>
+                <input type="text" name="email" id="email" />
+                <label>Password</label>
+                <input type="text" name="password" id="password" />
+                <button type="submit">Submit</button>
+              </fieldset>
+            </form>
+          </div>
+          <div class="clearfloat"></div>
+          <ul>
+            <li>Unordered list level one
+              <ul>
+                <li>Unordered list level two
+                  <ul>
+                    <li>Unordered list level three
+                      <ul>
+                        <li>Unordered list level four
+                          <ul>
+                            <li>Unordered list level five</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Unordered list level one</li>
+            <li>Unordered list level one</li>
+          </ul>
+          <ol>
+            <li>Ordered list level one
+              <ol>
+                <li>Ordered list level two
+                  <ol>
+                    <li>Ordered list level three
+                      <ol>
+                        <li>Ordered list level four
+                          <ol>
+                            <li>Ordered list level five</li>
+                          </ol>
+                        </li>
+                      </ol>
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+            <li>Ordered list level one</li>
+            <li>Ordered list level one</li>
+          </ol>
+          <dl>
+            <dt>Definition term </dt>
+            <dd>Definition definition: Suspendisse dictum, metus non aliquam sollicitudin, nisi nunc congue tortor, et auctor leo est malesuada ante. Quisque cursus fringilla ligula. Phasellus est ligula, pulvinar non, volutpat non, feugiat eget, lacus.</dd>
+          </dl>
+          <p>Example of code:</p>
+          <code>&lt;figure&gt;   &lt;img src=&quot;img_pulpit.jpg&quot; alt=&quot;The Pulpit Rock&quot;   width=&quot;304&quot; height=&quot;228&quot; /&gt;   &lt;figcaption&gt;Fig1. - A view of the pulpit rock in Norway.&lt;/figcaption&gt; &lt;/figure&gt;</code>
+          <p>Example of preformatted text:</p>
+          <pre>Phasellus enim felis, vestibulum a, dignissim eu, egestas posuere, ipsum. Fusce sed sapien. Aliquam vitae sem. In lacinia pellentesque lacus. Suspendisse dictum, metus non aliquam sollicitudin, nisi nunc congue tortor, et auctor leo est malesuada ante.</pre>
+          <div class="wrapper">
+            <div class="threecol alpha padRT"> <!-- class alpha starts row of mini columns.  class PadRT for mobile friendliness --> 
+              
+              <span class="img-box"><img src="img/1page_img1.jpeg" alt=""></span>
+              <h5 class="titlepad3">Technical Tips: Title of the Article.</h5>
+              <p class="padright2 padbot2">Brief introduction to the article. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Praesent vestibulum molese lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus.<br>
+                <a href="#">Read More</a></p>
+            </div>
+            <div class="threecol padRT"> <!-- class PadRT for mobile friendliness --> 
+              <span class="img-box"><img src="img/1page_img2.jpeg" alt=""></span>
+              <h5 class="titlepad3">Professional Developemnt Tip</h5>
+              <!-- class titlepad3 for mini column layout and mobile friendliness -->
+              <p class="padright2 padbot2">Brief introduction to the article. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. <a href="#">Read More</a></p>
+            </div>
+            <div class="threecol omega padRT"> <!-- class omega ends row of mini columns.  class PadRT for mobile friendliness --> 
+              <span class="img-box"><img src="img/1page_img3.jpeg" alt=""></span>
+              <h5 class="titlepad3">Spotlight: Title of article. </h5>
+              <p class="padright2 padbot2">Brief introduction to the article. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. <a href="#">Read More</a></p>
+            </div>
+          </div>
+          <br />
+          <h2 class="titlepad">Training Spotlight</h2>
+          <a class="date">Nov<span>22</span></a>
+          <div class="extra-wrap">Introduction to Cognos, Student Data Reporting <br>
+            <a href="#" class="link1">Register Now!</a></div>
+          <div class="clear"></div>
+          <div class="wrapper pad"> <a class="date">Nov<span>20</span></a>
+            <div class="extra-wrap">Customer Service Begins and Ends with YOU!<br>
+              <a href="#" class="link1">Register Now!</a></div>
+          </div>
+          <br />
+          <div class="quote">
+            <blockquote> "Short Blockquote. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Praesent vestibulum molese lacus. " <span></span> </blockquote>
+            <a href="#" class="link3">Name or Title<br>
+            <span>job or subtitle</span></a> </div>
+     
+        </div>
+        <!-- #content --> 
+      </div>
+      <!-- #container -->
+      <aside id="sidebar1" class="widget-area">
+        <p>Sidebar One</p>
+        <address>
+        <strong>Aquatic Center</strong><br />
+        575-646-3518<br>
+        <a href="https://myaccount.nmsu.edu/phonebook/hierarchy?department=Aquatic+Center">Phonebook</a> | <a href="http://maps.nmsu.edu/index.php?build=NA">Location</a>
+        </address>
+        <p>Duis hendrerit sem tempor velit viverra a venenatis risus placerat. Fusce vehicula odio non dui hendrerit imperdiet. Ut tincidunt nunc vel enim facilisis sollicitudin. Vestibulum imperdiet ipsum eget justo malesuada eget malesuada purus malesuada. </p>
+        <nav id="vertical">
+          <ul id="vertical-menu">
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">AggieFit</a> </li>
+            <li><a href='#' onClick="return false;" class="has-children">Aquatics + sub-links</a>
+              <ul>
+                <li><a href="#">Indoor Pool</a></li>
+                <li><a href="#">Outdoor Pool</a></li>
+              </ul>
+            </li>
+            <li><a href="#">This is an example of what a really long link phrase looks like here.</a> </li>
+            <li><a href="#">Fitness</a> </li>
+            <li><a href="#">Intramurals</a> </li>
+            <li><a href="#">Outdoor</a> </li>
+          </ul>
+        </nav>
+      </aside>
+      <aside id="sidebar2" class="widget-area">
+        <p>Sidebar Two</p>
+        <p>Ut pretium metus et ante gravida rhoncus. Ut lacinia commodo leo, consectetur auctor nunc pharetra sed. Ut nisl sem, varius nec mollis quis, mattis sed ante. Nulla facilisi.</p>
+      </aside>
+    </div>
+    <!-- #main -->
+    
+    <footer>
+      <div id="footer-container">
+        <div class="footer-column widget-area">
+          <h4>Footer column 1 (H4)</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus tortor id leo sodales elementum. Pellentesque aliquam eros eget leo posuere accumsan. Etiam vel tortor vel tellus hendrerit faucibus. Cras tortor magna, congue vel faucibus a, dictum non tortor. Nunc accumsan, justo non egestas pharetra, mi lectus pretium risus, non elementum lacus diam nec quam. Fusce tincidunt ultrices pharetra. Duis at nisi non orci egestas consectetur id quis massa. Phasellus eleifend nisi nec nunc porta rhoncus.</p>
+        </div>
+        <div class="footer-column widget-area">
+          <h4>Footer column 2 (H4)</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus tortor id leo sodales elementum. Pellentesque aliquam eros eget leo posuere accumsan. Etiam vel tortor vel tellus hendrerit faucibus. Cras tortor magna, congue vel faucibus a, dictum non tortor. Nunc accumsan, justo non egestas pharetra, mi lectus pretium risus, non elementum lacus diam nec quam. Fusce tincidunt ultrices pharetra. Duis at nisi non orci egestas consectetur id quis massa. Phasellus eleifend nisi nec nunc porta rhoncus.</p>
+        </div>
+        <div class="footer-column widget-area">
+          <h4>Footer column 3 (H4)</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus tortor id leo sodales elementum. Pellentesque aliquam eros eget leo posuere accumsan. Etiam vel tortor vel tellus hendrerit faucibus. Cras tortor magna, congue vel faucibus a, dictum non tortor. Nunc accumsan, justo non egestas pharetra, mi lectus pretium risus, non elementum lacus diam nec quam. Fusce tincidunt ultrices pharetra. Duis at nisi non orci egestas consectetur id quis massa. Phasellus eleifend nisi nec nunc porta rhoncus.</p>
+        </div>
+      </div>
+    </footer>
+    <div id="copyright">
+      <p>&copy; 2012 New Mexico State University Board of Regents</p>
+    </div>
+    <!-- #copyright --> 
+  </div>
+  <!-- #mobile --> 
+</div>
+<!-- #wrapper --> 
+
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>--> 
+<!--<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>-->
+
+</body>
+</html>
